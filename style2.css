@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(45deg, #3ecdf1, #a0e9c6, #ea8282, #ffff46);
+}
+h1 > img {
+  height: 70px;
+  width: 70px;
+  position: relative;
+  top: -60px;
+  left: 55px;
+  margin-bottom: 20px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+.container {
+  border: 1px solid black;
+  padding: 30px;
+  font-size: larger;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.8);
+  position: relative;
+  margin-top: 20px;
+  background: transparent;
+  backdrop-filter: blur(100%);
+}
+form {
+  font-size: larger;
+  /* margin-right: 40px; */
+}
+img {
+  height: 15px;
+  width: 15px;
+  padding: 0;
+  margin: 0;
+  margin-top: 2px;
+}
+button {
+  text-align: center;
+  font-size: x-large;
+  margin-left: 50px;
+  border-radius: 10px;
+  padding: 5px;
+  background: transparent;
+  backdrop-filter: blur(500px);
+  gap: 50px;
+  margin-top: 20px;
+  margin-left: 80px;
+  animation: anime 1s ease-in-out infinite;
+}
+input {
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid black;
+}
+p {
+  font-size: 15px;
+  text-align: center;
+  margin-left: 15px;
+  margin-top: 5px;
+}
+input:hover {
+  cursor: pointer;
+  box-shadow: 0 0 10px 0 rgba(249, 0, 0, 0.8);
+}
+button:hover {
+  cursor: pointer;
+  background: linear-gradient(45deg, #3ecdf1, #a0e9c6, #ea8282, #ffff46);
+  box-shadow: 0 0 10px 0 rgba(249, 0, 0, 0.8);
+  animation: anime 1s ease-in-out infinite;
+}
+@keyframes anime {
+  0% {
+    transform: scale(1);
+    background: linear-gradient(45deg, #3ecdf1, #a0e9c6, #ea8282, #ffff46);
+  }
+  50% {
+    transform: scale(1.1);
+    background: linear-gradient(45deg, #3ecdf1, #a0e9c6, #ea8282, #ffff46);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
